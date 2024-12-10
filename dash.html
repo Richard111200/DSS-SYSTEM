@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genre Selector</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+
+<body>
+    <!-- Logout Button -->
+    <button id="logout-btn" class="logout-btn">Logout</button>
+
+    <button id="genre-btn">Genre</button>
+
+    <div id="genre-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Select a Genre</h2>
+            <ul>
+                <li><button class="genre-option" data-genre="isekai">Isekai</button></li>
+                <li><button class="genre-option" data-genre="action">Action</button></li>
+                <li><button class="genre-option" data-genre="fantasy">Fantasy</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="dash.js"></script>
+</body>
+
+</html>

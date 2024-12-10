@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #30142b, #2772a1);
+    position: relative;
+    /* Needed for positioning logout button */
+}
+
+/* Logout button styling */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #d9534f;
+    /* Red for logout */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+#genre-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #289bb8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#genre-btn:hover {
+    background-color: #237a98;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 10px;
+}
+
+.modal-content span {
+    font-size: 13px;
+    float: right;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.modal-content h2 {
+    margin: 0 0 15px;
+}
+
+.modal-content .genre-option {
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+    background-color: #289bb8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content .genre-option:hover {
+    background-color: #237a98;
+}
+
+.close-btn {
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #289bb8;
+    font-weight: bold;
+}
