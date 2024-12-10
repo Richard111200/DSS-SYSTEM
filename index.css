@@ -5,10 +5,36 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background: linear-gradient(#30142b, #2772a1);
+}
+
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0c4d6b;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.site-footer p {
+    margin: 5px 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.site-footer strong {
+    color: #289bb8;
 }
 
 .login-page {
